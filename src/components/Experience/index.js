@@ -1,6 +1,5 @@
-
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -72,35 +71,36 @@ const TimelineSection = styled.div`
     gap: 12px;
 `;
 
-
-
 const index = () => {
-    return (
-        <Container id="experience">
-            <Wrapper>
-                <Title>Experience</Title>
-                <Desc>
-                    My work experience as a software engineer and working on different companies and projects.
-                </Desc>
-                <TimelineSection>
-                    <Timeline>
-                        {experiences.map((experience,index) => (
-                            <TimelineItem>
-                                <TimelineSeparator>
-                                    <TimelineDot variant="outlined" color="secondary" />
-                                    {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
-                                </TimelineSeparator>
-                                <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                    <ExperienceCard experience={experience}/>
-                                </TimelineContent>
-                            </TimelineItem>
-                        ))}
-                    </Timeline>
+  return (
+    <Container id="experience">
+      <Wrapper>
+        <Title>Experience</Title>
+        <Desc>
+          I have gained experience as a software engineer by contributing to various projects and
+          internships, working with different technologies, and collaborating with diverse teams to
+          build real-world applications.
+        </Desc>
+        <TimelineSection>
+          <Timeline>
+            {experiences.map((experience, index) => (
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot variant="outlined" color="secondary" />
+                  {index !== experiences.length - 1 && (
+                    <TimelineConnector style={{ background: '#854CE6' }} />
+                  )}
+                </TimelineSeparator>
+                <TimelineContent sx={{ py: '12px', px: 2 }}>
+                  <ExperienceCard experience={experience} />
+                </TimelineContent>
+              </TimelineItem>
+            ))}
+          </Timeline>
+        </TimelineSection>
+      </Wrapper>
+    </Container>
+  );
+};
 
-                </TimelineSection>
-            </Wrapper>
-        </Container>
-    )
-}
-
-export default index
+export default index;
