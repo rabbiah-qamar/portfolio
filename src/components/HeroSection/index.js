@@ -11,9 +11,8 @@ import {
   Title,
   Span,
   SubTitle,
-  SocialMediaIcons,
-  SocialMediaIcon,
 } from './HeroStyle';
+
 import dp from '../../images/dp.jpg';
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';
