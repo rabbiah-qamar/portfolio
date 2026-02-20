@@ -100,7 +100,6 @@ function Footer() {
             <GitHubIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2026 Rabbiah Qamar. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );
